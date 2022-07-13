@@ -1,0 +1,32 @@
+<div>
+        <ul>
+          {users.map((user) => {
+            return <p>{user.shortName}</p>;
+          })}
+        </ul>
+        {users.map((user) => {
+          return (
+            <img
+              src={user.crestUrl}
+              alt="banniere"
+              height="100px"
+              width="100px"
+            />
+          );
+        })}
+        {users.map((user) => {
+          return <p>{user.venue}</p>;
+        })}
+        {users.map((user) => {
+          return <p>{user.address}</p>;
+        })}
+        {users.map((user) => {
+          return <p>{user.email}</p>;
+        })}
+        {users.map((user) => {
+          return <p>{user.phone}</p>;
+        })}
+        {users.map((user) => {
+          return <p>{user.founded}</p>;
+        })}
+      </div>
